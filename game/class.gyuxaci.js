@@ -44,6 +44,7 @@ class Gyuxaci extends LivingCreature {
             for (var i in grassArr) {
                 if (grassArr[i].x == newX && grassArr[i].y == newY) {
                     grassArr.splice(i, 1)
+                    break
                 }
             }
             this.energy++
