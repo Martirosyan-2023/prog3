@@ -10,9 +10,6 @@ module.exports = class Milk extends LivingCreature {
         this.term--
     }
 
-    termm() {
-        setInterval(termminus, 1000);
-    }
     die() {
         if (this.term <= 0) {
             for (var i in MilkArr) {

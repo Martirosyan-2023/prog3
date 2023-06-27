@@ -145,7 +145,7 @@ function drawForBackend() {
         CowArr[i].milkadd()
     }
     for (var i in MilkArr) {
-        MilkArr[i].termm()
+        MilkArr[i].termminus()
         MilkArr[i].die()
     }
 
