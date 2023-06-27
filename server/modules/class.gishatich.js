@@ -22,9 +22,9 @@ module.exports = class Gishatich extends LivingCreature {
         this.getNewCoordinates()
         return super.chooseCell(character)
     }
-    mult() {
+    mult(mult) {
         var emptyy = random(this.chooseCell(0))
-        if (emptyy && this.energy > 14) {
+        if (emptyy && this.energy > mult) {
             var newX = emptyy[0]
             var newY = emptyy[1]
             matrix[newY][newX] = 3
@@ -60,6 +60,23 @@ module.exports = class Gishatich extends LivingCreature {
                 }
             }
             this.energy += 3
+        }
+    }
+    milkdrink() {
+        var milk = random(this.chooseCell(7))
+        if (milk) {
+            matrix[this.y][this.x] = 0
+            var newX = milk[0]
+            var newY = milk[1]
+            matrix[newY][newX] = 3
+            this.x = newX
+            this.y = newY
+            for (var i in MilkArr) {
+                if (MilkArr[i].x == newX && MilkArr[i].y == newY) {
+                    MilkArr.splice(i, 1)
+                }
+            }
+            this.energy == 9
         }
     }
     die() {

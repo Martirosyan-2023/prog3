@@ -1,7 +1,9 @@
 {
-  "grasses": 533,
+  "grasses": 200,
   "grassEaters": 0,
   "gishatichs": 0,
   "gyuxacis": 19,
-  "hreshs": 2
+  "hreshs": 2,
+  "cows": 4,
+  "milks": 0
 }

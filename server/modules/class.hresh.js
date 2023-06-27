@@ -68,4 +68,21 @@ module.exports = class Hresh extends LivingCreature {
         }
 
     }
+    milkdrink(){
+        var milk = random(this.chooseCell(7))
+        if (milk) {
+            matrix[this.y][this.x] = 0
+            var newX = milk[0]
+            var newY = milk[1]
+            matrix[newY][newX] = 5
+            this.x = newX
+            this.y = newY
+            for (var i in MilkArr) {
+                if (MilkArr[i].x == newX && MilkArr[i].y == newY) {
+                    MilkArr.splice(i, 1)
+                }
+            }
+            this.energy == 9
+        }
+    }
 }

@@ -1,0 +1,54 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none; /* remove the default border */
+  padding: 10px 20px; /* add some padding for readability */
+  font-size: 16px; /* increase the font size for emphasis */
+  border-radius: 30px; /* round the corners for a softer look */
+  color: black; /* set the text color to white so it stands out */
+  cursor: pointer; /* give the button a clickable cursor */
+  transition: all 0.3s; /* add a smooth background color transition on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Define the styles for the summer button */
+.summer-button {
+  background-color: #ffa726; 
+  color: #ffffff;/* set a warm orange color */
+}
+
+/* Define the styles for the spring button */
+.spring-button {
+  background-color: #66bb6a; /* set a fresh green color */
+  color: #ffffff;
+}
+
+/* Define the styles for the autumn button */
+.autumn-button {
+  background-color:  #ef5350; /* set a rich red color */
+}
+
+/* Define the styles for the winter button */
+.winter-button {
+  background-color: #4fc3f7; /* set a cool blue color */
+}
+
+.themeButton {
+  color: #ffffff;
+  background-color: #607d8b;
+}
+.themeButton1 {
+  color: #000000;
+  background-color: #ffeb3b;
+}
+
+/* Add hover effects to all buttons */
+button:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}

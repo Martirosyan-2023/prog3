@@ -53,6 +53,25 @@ module.exports = class Gyuxaci extends LivingCreature {
             this.energy++
         }
     }
+    milkdrink() {
+
+        var milk = random(this.chooseCell(7))
+        if (milk) {
+            matrix[this.y][this.x] = 0
+            var newX = milk[0]
+            var newY = milk[1]
+            matrix[newY][newX] = 4
+            this.x = newX
+            this.y = newY
+            for (var i in MilkArr) {
+                if (MilkArr[i].x == newX && MilkArr[i].y == newY) {
+                    MilkArr.splice(i, 1)
+                    break
+                }
+            }
+            this.energy == 5
+        }
+    }
     die() {
         if (grassArr.length == 0) {
             for (var i in GyuxaciArr) {
